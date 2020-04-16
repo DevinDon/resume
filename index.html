@@ -185,10 +185,10 @@
     <section>
       <ul>
         <li>
-          <a href="https://devindon.github.io/android-api-server" id="android-api-server" class="qr"></a>
-          <span class="name">Adventure Server</span>
-          <span class="desc">Spring Boot 游戏服务器</span>
-          <span class="tag">后端、测试、运维</span>
+          <a href="https://devindon.github.io/spring-boot-tutorial" id="spring-boot-tutorial" class="qr"></a>
+          <span class="name">Spring Boot Tour</span>
+          <span class="desc">入门 => 入土</span>
+          <span class="tag">后端、测试</span>
         </li>
         <li>
           <a href="https://github.com/DevinDon/blog-2018" id="blog-2018" class="qr"></a>
@@ -261,11 +261,8 @@
     list.forEach((v, k) => {
       v.setAttribute('style', `width: ${v.getAttribute('data-value') * 100}%;`);
     });
-    generateQRCode('android-api-server');
-    generateQRCode('rester');
-    generateQRCode('redion');
-    generateQRCode('blog-2018');
-    generateQRCode('docker-image');
+    document.querySelectorAll('.qr')
+      .forEach(e => generateQRCode(e.id));
   }
 </script>
 

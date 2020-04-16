@@ -1,12 +1,12 @@
 # Resume
 
-个人简历，使用原生 HTML + CSS + JS 完成，作者是个原始人:laughing:。
+个人简历，使用原生 HTML + CSS + JS 完成，作者是可能个原始人:laughing:。
 
 # Contact
 
 :globe_with_meridians: Blog: <https://don.red>
 
-:email: Email: <mailto:DevinDon@Foxmail.com>
+:email: Email: [DevinDon@Foxmail.com](mailto:DevinDon@Foxmail.com)
 
 # LICENSE
 

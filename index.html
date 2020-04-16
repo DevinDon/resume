@@ -1,0 +1,400 @@
+<!DOCTYPE html>
+<html lang="zh-Hans">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Resume</title>
+  <style>
+    html {
+      font-family: 'Consolas', '微软雅黑';
+    }
+
+    body {
+      padding: 0;
+      margin: 0;
+      background-color: #323232;
+      color: #ecf0f1;
+    }
+
+    ul,
+    li {
+      list-style: none;
+      padding-inline-start: 0;
+      margin: 0;
+    }
+
+    li {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      margin: 1rem 0;
+    }
+
+    header {
+      margin: 1rem 0;
+    }
+
+    header>h1 {
+      font-size: 1.5rem;
+      margin: 0;
+    }
+
+    header>h2 {
+      font-size: 1.25rem;
+      margin: 0;
+    }
+
+    h1,
+    h2,
+    h3 {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+    }
+
+    h1>.icon,
+    h2>.icon,
+    h3>.icon {
+      margin: 0;
+    }
+
+    header>p {
+      margin: 0;
+      color: grey;
+    }
+
+    .icon {
+      margin: 0 1rem;
+      height: 32px;
+    }
+
+    div.progress {
+      width: 100%;
+      border: 1px dashed #ecf0f1;
+    }
+
+    div.progress>.name {
+      background-color: grey;
+      width: 70%;
+      height: 100%;
+      padding-left: 1rem;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+
+    .part {
+      padding: 1rem 2rem;
+      margin: 0;
+      border-bottom: 1px #ecf0f1 dashed;
+    }
+
+    section#summary {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-evenly;
+      flex-wrap: wrap;
+    }
+
+    section#summary>* {
+      max-width: 25vw;
+    }
+
+    section#project ul {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-evenly;
+      align-items: center;
+      flex-wrap: wrap;
+    }
+
+    section#project li {
+      margin: 0.5rem;
+      width: 192px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    section#project li>.name {
+      font-weight: bold;
+    }
+
+    section#project li>.desc {
+      text-align: center;
+    }
+
+    section#project li>.tag {
+      font-size: small;
+      color: grey;
+    }
+
+    section#contact {
+      border-bottom: none;
+    }
+  </style>
+</head>
+
+<body>
+
+  <section id="summary" class="part">
+    <div class="left">
+      <h1><img src="pen.png" alt="" class="icon">个人简介</h1>
+      <p>邓晓天，98 年，21 岁</p>
+      <p>热爱自学新技术</p>
+    </div>
+    <div class="right">
+      <h1><img src="paper.png" alt="" class="icon">求职意向</h1>
+      <p>全栈 / 后端</p>
+      <p>测试 / 运维</p>
+    </div>
+    <img src="head.png" alt="Head" width="128px" height="128px">
+  </section>
+
+  <section id="education" class="part">
+    <header>
+      <h1><img src="education.png" alt="" class="icon">教育经历</h1>
+      <p>本科全日制及以上教育经历</p>
+    </header>
+    <section>
+      <div class="line">
+        <span class="time">2016 - 至今</span>
+        <span class="split">·</span>
+        <span class="item">大连科技学院</span>
+        <span class="item">软件工程本科</span>
+      </div>
+    </section>
+  </section>
+
+  <section id="skill" class="part">
+    <header>
+      <h1><img src="skill.png" alt="" class="icon">专业技能</h1>
+      <p>前端 / 后端 / 数据库 / 测试 / 运维</p>
+    </header>
+    <section>
+      <header>
+        <h2>编程语言</h2>
+        <p>Coding Language</p>
+      </header>
+      <ul>
+        <li>
+          <img src="html.png" alt="" class="icon">
+          <div class="progress">
+            <div class="name" data-value="0.8">HTML</div>
+          </div>
+        </li>
+        <li>
+          <img src="css.png" alt="" class="icon">
+          <div class="progress">
+            <div class="name" data-value="0.6">CSS / SACC / SCSS / LESS</div>
+          </div>
+        </li>
+        <li>
+          <img src="typescript.png" alt="" class="icon">
+          <div class="progress">
+            <div class="name" data-value="0.9">TypeScript / JavaScript</div>
+          </div>
+        </li>
+        <li>
+          <img src="java.png" alt="" class="icon">
+          <div class="progress">
+            <div class="name" data-value="0.7">Java</div>
+          </div>
+        </li>
+        <li>
+          <img src="sql.png" alt="" class="icon">
+          <div class="progress">
+            <div class="name" data-value="0.5">SQL</div>
+          </div>
+        </li>
+      </ul>
+    </section>
+    <section>
+      <header>
+        <h2>前端开发</h2>
+        <p>Frontend Development</p>
+      </header>
+      <ul>
+        <li>
+          <img src="angular.png" alt="" class="icon">
+          <div class="progress">
+            <div class="name" data-value="0.55">Angular</div>
+          </div>
+        </li>
+        <li>
+          <img src="android.png" alt="" class="icon">
+          <div class="progress">
+            <div class="name" data-value="0.5">Android</div>
+          </div>
+        </li>
+        <li>
+          <img src="webpack.png" alt="" class="icon">
+          <div class="progress">
+            <div class="name" data-value="0.7">Native + Webpack / Gulp</div>
+          </div>
+        </li>
+      </ul>
+      <section>
+        <header>
+          <h2>后端开发</h2>
+          <p>Backend Development</p>
+        </header>
+        <ul>
+          <li>
+            <img src="nodejs.png" alt="" class="icon">
+            <div class="progress">
+              <div class="name" data-value="0.75">Node.JS / Koa / Express</div>
+            </div>
+          </li>
+          <li>
+            <img src="nest.png" alt="" class="icon">
+            <div class="progress">
+              <div class="name" data-value="0.4">Nest + TypeORM</div>
+            </div>
+          </li>
+          <li>
+            <img src="spring-boot.png" alt="" class="icon">
+            <div class="progress">
+              <div class="name" data-value="0.7">Spring Boot + MyBatis</div>
+            </div>
+          </li>
+        </ul>
+      </section>
+      <section>
+        <header>
+          <h2>测试开发</h2>
+          <p>Test Development</p>
+        </header>
+        <ul>
+          <li>
+            <img src="jasmine.png" alt="" class="icon">
+            <div class="progress">
+              <div class="name" data-value="0.45">Jasmine</div>
+            </div>
+          </li>
+          <li>
+            <img src="junit.png" alt="" class="icon">
+            <div class="progress">
+              <div class="name" data-value="0.65">JUnit</div>
+            </div>
+          </li>
+        </ul>
+      </section>
+      <section>
+        <header>
+          <h2>运维管理</h2>
+          <p>Operations & Management</p>
+        </header>
+        <ul>
+          <li>
+            <img src="docker.png" alt="" class="icon">
+            <div class="progress">
+              <div class="name" data-value="0.6">Docker & Swarm</div>
+            </div>
+          </li>
+          <li>
+            <img src="linux.png" alt="" class="icon">
+            <div class="progress">
+              <div class="name" data-value="0.55">Linux: Centos / Ubuntu</div>
+            </div>
+          </li>
+        </ul>
+      </section>
+    </section>
+  </section>
+
+  <section id="project" class="part">
+    <header>
+      <h2><img src="project.png" alt="" class="icon">项目经验</h2>
+      <p>扫描二维码来查看项目</p>
+    </header>
+    <section>
+      <ul>
+        <li>
+          <a href="https://devindon.github.io/android-api-server" id="android-api-server" class="qr"></a>
+          <span class="name">Adventure Server</span>
+          <span class="desc">Spring Boot 游戏服务器</span>
+          <span class="tag">后端、测试、运维</span>
+        </li>
+        <li>
+          <a href="https://github.com/DevinDon/blog-2018" id="blog-2018" class="qr"></a>
+          <span class="name">SPA Blog</span>
+          <span class="desc">原生单页应用博客</span>
+          <span class="tag">前端、后端、测试、运维</span>
+        </li>
+        <li>
+          <a href="https://www.npmjs.com/package/@iinfinity/rester" id="rester" class="qr"></a>
+          <span class="name">Rester</span>
+          <span class="desc">后端服务器开发框架</span>
+          <span class="tag">后端、测试</span>
+        </li>
+        <li>
+          <a href="https://www.npmjs.com/package/@iinfinity/redion" id="redion" class="qr"></a>
+          <span class="name">Redion</span>
+          <span class="desc">会话管理及持久化框架</span>
+          <span class="tag">后端、测试</span>
+        </li>
+        <li>
+          <a href="https://code.aliyun.com/groups/iinfinity-docker-image" id="docker-image" class="qr"></a>
+          <span class="name">Docker Image</span>
+          <span class="desc">Docker Image 镜像仓库</span>
+          <span class="tag">后端、运维</span>
+        </li>
+      </ul>
+    </section>
+  </section>
+
+  <section id="contact" class="part">
+    <header>
+      <h2><img src="contact.png" alt="" class="icon">联系方式</h2>
+      <p>个人常用联系方式</p>
+    </header>
+    <ul>
+      <li>
+        <img src="phone.png" alt="" class="icon">
+        <span>+86 187 4915 0457</span>
+      </li>
+      <li>
+        <img src="email.png" alt="" class="icon">
+        <span>DevinDon@Foxmail.com</span>
+      </li>
+      <li>
+        <img src="wechat.png" alt="" class="icon">
+        <span>Regen9598</span>
+      </li>
+    </ul>
+    <section>
+
+    </section>
+  </section>
+
+</body>
+
+<script type="text/javascript" src="https://static.runoob.com/assets/qrcode/qrcode.min.js"></script>
+<script>
+  function generateQRCode(id, url) {
+    const element = document.getElementById(id);
+    return new QRCode(element, {
+      colorDark: '#323232',
+      colorLight: '#ecf0f1',
+      text: url || element.getAttribute('href'),
+      width: 128,
+      height: 128
+    });
+  }
+  onload = () => {
+    const list = document.querySelectorAll('.progress>.name');
+    list.forEach((v, k) => {
+      v.setAttribute('style', `width: ${v.getAttribute('data-value') * 100}%;`);
+    });
+    generateQRCode('android-api-server');
+    generateQRCode('rester');
+    generateQRCode('redion');
+    generateQRCode('blog-2018');
+    generateQRCode('docker-image');
+  }
+</script>
+
+</html>

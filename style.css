@@ -1,5 +1,13 @@
+@import url(https://cdn.jsdelivr.net/gh/tonsky/FiraCode@3/distr/fira_code.css);
+
 html {
-  font-family: "Consolas", "微软雅黑";
+  font-family: "Fira Code", "微软雅黑";
+}
+
+@supports (font-variation-settings: normal) {
+  html {
+    font-family: "Fira Code", "微软雅黑";
+  }
 }
 
 body {

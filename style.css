@@ -20,6 +20,14 @@ body {
   max-width: 960px;
 }
 
+a:hover,
+a:visited,
+a:link,
+a:active {
+  text-decoration: none;
+  color          : inherit;
+}
+
 ul,
 li {
   list-style          : none;
@@ -104,15 +112,25 @@ div.progress>.name {
   border-bottom: 1px #ecf0f1 dashed;
 }
 
+/* Section */
+
 section#summary {
   display        : flex;
   flex-direction : row;
-  justify-content: space-evenly;
+  justify-content: space-between;
   flex-wrap      : wrap;
 }
 
-section#summary>* {
-  max-width: 25vw;
+@media screen and (max-width: 500px) {
+  section#summary>.career {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 501px) {
+  section#career {
+    display: none;
+  }
 }
 
 section#project ul {

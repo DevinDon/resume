@@ -58,8 +58,11 @@
     .cards {
       display: flex;
       flex-direction: row;
+      justify-content: center;
+      align-items: center;
       flex-wrap: wrap;
       width: 100%;
+      /* max-width: 300px; */
     }
 
     .card {
@@ -104,11 +107,17 @@
       .card {
         width: calc(100% / 2 - 40px);
       }
+
+      .card>.icon {
+        width: 60px;
+        height: 60px;
+      }
     }
 
     @media screen and (min-width: 501px) {
       .card {
         width: calc(100% / 3 - 40px);
+        max-width: 300px;
       }
     }
 
